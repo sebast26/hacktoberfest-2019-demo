@@ -3,8 +3,8 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
     `java-library`
-    kotlin("jvm") version "1.3.50" apply false
-    kotlin("plugin.spring") version "1.3.50" apply false
+    kotlin("jvm") version "1.3.31" apply false
+    kotlin("plugin.spring") version "1.3.31" apply false
     id("io.spring.dependency-management") version "1.0.7.RELEASE"
 }
 

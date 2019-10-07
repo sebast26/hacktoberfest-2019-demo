@@ -1,5 +1,8 @@
 package pl.sgorecki.gametrading
 
+import java.time.Clock
+import java.time.ZoneOffset
+import java.util.UUID
 import pl.sgorecki.gametrading.domain.Developer
 import pl.sgorecki.gametrading.domain.DeveloperId
 import pl.sgorecki.gametrading.domain.Game
@@ -12,9 +15,6 @@ import pl.sgorecki.gametrading.port.LoadTraderPort
 import pl.sgorecki.gametrading.port.UpdateCatalogStatePort
 import pl.sgorecki.gametrading.usecase.AddGameToCatalogCommand
 import pl.sgorecki.gametrading.usecase.AddGameToCatalogUseCase
-import java.time.Clock
-import java.time.ZoneOffset
-import java.util.UUID
 
 class AddGameToCatalogService(
     private val loadDeveloperPort: LoadDeveloperPort,
@@ -44,7 +44,6 @@ class AddGameToCatalogService(
     }
 
     private fun requireGenreExists(genreName: GenreName) {
-
     }
 
     private fun requireDeveloperExists(developerId: DeveloperId): Developer {

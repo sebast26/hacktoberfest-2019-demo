@@ -15,8 +15,8 @@ class Game(
     private val notes: String
 )
 
-inline class GameId(val value: UUID)
-inline class GenreName(val value: String)
+class GameId(val value: UUID)
+class GenreName(val value: String)
 
 enum class Platform {
     WINDOWS, MACOS, LINUX
@@ -25,5 +25,3 @@ enum class Platform {
 enum class Mode {
     SINGLE_PLAYER, MULTI_PLAYER
 }
-
-

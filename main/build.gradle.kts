@@ -6,7 +6,7 @@ plugins {
 
 dependencies {
     implementation(project(":domain"))
-    implementation(project(":infra-web"))
+    implementation(project(":adapter:web"))
     implementation(kotlin("stdlib-jdk8"))
 
     implementation("org.springframework.boot:spring-boot-starter-web")
