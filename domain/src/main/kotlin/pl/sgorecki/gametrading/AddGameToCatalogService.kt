@@ -17,7 +17,7 @@ import pl.sgorecki.gametrading.usecase.AddGameToCatalogCommand
 import pl.sgorecki.gametrading.usecase.AddGameToCatalogUseCase
 
 @DomainService
-class AddGameToCatalogService(
+internal class AddGameToCatalogService(
     private val loadDeveloperPort: LoadDeveloperPort,
     private val loadTraderPort: LoadTraderPort,
     private val updateCatalogStatePort: UpdateCatalogStatePort,
