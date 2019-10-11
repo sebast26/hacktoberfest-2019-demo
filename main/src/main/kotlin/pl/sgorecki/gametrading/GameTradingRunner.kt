@@ -1,4 +1,4 @@
-package pl.sgorecki.multiKotlinProject
+package pl.sgorecki.gametrading
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication

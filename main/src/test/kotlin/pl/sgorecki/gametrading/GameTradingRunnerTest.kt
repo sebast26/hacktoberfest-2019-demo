@@ -1,4 +1,4 @@
-package pl.sgorecki.multiKotlinProject
+package pl.sgorecki.gametrading
 
 import org.junit.Test
 import org.junit.runner.RunWith
@@ -8,7 +8,7 @@ import org.springframework.test.context.junit4.SpringRunner
 
 @RunWith(SpringRunner::class)
 @SpringBootTest
-class MultiKotlinProjectRunnerTest {
+class GameTradingRunnerTest {
 
     @Test
     fun contextLoads() {
