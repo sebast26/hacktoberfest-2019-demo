@@ -7,7 +7,6 @@ import pl.sgorecki.gametrading.domain.Developer
 import pl.sgorecki.gametrading.domain.DeveloperId
 import pl.sgorecki.gametrading.domain.Game
 import pl.sgorecki.gametrading.domain.GameId
-import pl.sgorecki.gametrading.domain.GenreName
 import pl.sgorecki.gametrading.domain.Trader
 import pl.sgorecki.gametrading.domain.TraderId
 import pl.sgorecki.gametrading.port.LoadDeveloperPort
@@ -25,7 +24,6 @@ internal class AddGameToCatalogService(
 ) : AddGameToCatalogUseCase {
 
     override fun addGameToCatalog(command: AddGameToCatalogCommand) {
-        requireGenreExists(command.genreName)
         val developer = requireDeveloperExists(command.developerId)
         val trader = requireTraderExists(command.traderId)
 
@@ -41,10 +39,7 @@ internal class AddGameToCatalogService(
             command.notes
         )
 
-        val game = updateCatalogStatePort.addGameToCatalog(newGame)
-    }
-
-    private fun requireGenreExists(genreName: GenreName) {
+        updateCatalogStatePort.addGameToCatalog(newGame)
     }
 
     private fun requireDeveloperExists(developerId: DeveloperId): Developer {
