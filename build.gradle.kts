@@ -8,6 +8,8 @@ plugins {
     id("io.spring.dependency-management") version "1.0.7.RELEASE"
 }
 
+extra["kotlin.version"] = "1.3.11"
+
 allprojects {
     group = "pl.sgorecki.multiKotlinProject"
     version = "0.0.1-SNAPSHOT"
