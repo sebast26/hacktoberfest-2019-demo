@@ -9,7 +9,7 @@ dependencies {
     implementation(project(":adapter:web"))
     implementation(project(":adapter:persistence"))
     implementation(kotlin("stdlib-jdk8"))
-    implementation(kotlin("kotlin-reflect"))
+    implementation(kotlin("reflect"))
 
     implementation("org.springframework.boot:spring-boot-starter-web")
     runtime("com.h2database:h2:1.4.199")
